@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단 -->
+        <header id="header" class="w_box">
+                <div id="viewer">
+                    <ul>
+                        <li class="img1"></li>
+                        <li class="img2"></li>
+                        <li class="img3"></li>
+                    </ul>
+                </div>
+
+            <nav>
+                <div class="logoBox">
+                    <img src="imges/mainLogo.png" alt="logo">
+                </div>
+                
+                <div class="mainMenu">
+                    <ul class="navi">
+                        <li><a href="#">STEAK</a></li>
+                        <li><a href="#">SALAD BAR</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                    </ul>
+                </div>
+
+                <div class="subDep">
+                    <div class="subMenu">
+                        <ul class="subSteak">
+                            <li><a href="#">Golden Premier</a></li>
+                            <li><a href="#">Yumstone</a></li>
+                            <li><a href="#">Smoke Woodbox</a></li>
+                            <li><a href="#">Season</a></li>
+                        </ul>
+
+                        <ul class="subSalad">
+                            <li><a href="#">Salad Bar</a></li>
+                            <li><a href="#">Beverage</a></li>
+                            <li><a href="#">픽업&딜리버리</a></li>
+                            <li><a href="#">원산지정보</a></li>
+                            <li><a href="#">알레르기정보</a></li>
+                        </ul>
+                        
+                        <ul class="subStore">
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">VIPS PREMIER</a></li>
+                            <li><a href="#">YUM DELIVERY</a></li>
+                            <li><a href="#">돌잔치</a></li>
+                            <li><a href="#">체험교실</a></li>
+                        </ul>
+
+                        <ul class="subEvent">
+                            <li><a href="#">HOT 이벤트</a></li>
+                            <li><a href="#">매장별 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+
+                        <ul class="subMember">
+                            <li><a href="#">제휴/할인카드</a></li>
+                            <li><a href="#">상품권</a></li>
+                            <li><a href="#">기프트카드</a></li>
+                            <li><a href="#">CJ ONE</a></li>
+                            <li><a href="#">빕스 매니아</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="join">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>
+
+            <!-- <div class="btnR">
+                <button>〈</button>
+            </div>
+
+            <div class="btnL">
+                <button>〉</button>
+            </div> -->
+
+            <ul id="btnGroup">
+                <li id="btn0"><a href=""></a></li>
+                <li id="btn1"><a href=""></a></li>
+                <li id="btn2"><a href=""></a></li>
+            </ul>
+        </header>
+
+        <!-- 메뉴 -->
+        <section id="steakM" class="w_box">
+            <div class="nameB">
+                <div class="nameImg"></div>
+                <div class="nameImgS"></div>
+                <h1>steak menu</h1>
+            </div>
+
+            <div class="menuB">
+                <article class="golden">
+                    <div class="photo">
+                        <img src="imges/premier.jpg" alt="premier">
+                    </div>
+                    <div class="sName">
+                        <h3>GOLDEN PREMIER</h3>
+                    </div>
+                    <div class="sText">
+                        <p>최고급 부위로 감동적인 풍미의<br>빕스 프리미어 스테이크</p>
+                    </div>
+                </article>
+
+                <article class="yum">
+                    <div class="photo">
+                        <img src="imges/yumstone.jpg" alt="yum">
+                    </div>
+                    <div class="sName">
+                        <h3>YUM STONE</h3>
+                    </div>
+                    <div class="sText">
+                        <p>뜨거운 얌스톤 위에서<br>직접 구워먹는 스테이크</p>
+                    </div>
+                </article>
+
+                <article class="smoke">
+                    <div class="photo">
+                        <img src="imges/smoke.jpg" alt="smoke">
+                    </div>
+                    <div class="sName">
+                        <h3>SMOKE WOODBOX</h3>
+                    </div>
+                    <div class="sText">
+                        <p>참나무 스모크 레이어링으로<br>깊고 진한 향의 스테이크</p>
+                    </div>
+                </article>
+
+                <article class="season">
+                    <div class="photo">
+                        <img src="imges/season.jpg" alt="season">
+                    </div>
+                    <div class="sName">
+                        <h3>SEASON</h3>
+                    </div>
+                    <div class="sText">
+                        <p>특별한 날에 잘 어울리는<br>풍미 가득 스테이크</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 유튜브 -->
+        <section id="youtube" class="w_box">
+            <div class="ytBg">
+                <div class="realYt">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/Vq0OM66V8LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 브랜드스토리 -->
+        <section id="brand">
+            <div class="brandBox">
+                <div class="brandImg">
+                    <img src="imges/brand.jpg" alt="steak">
+                </div>
+
+                <div class="brandText">
+                    <div class="textBox">
+                        <h3>My No.1 스테이크 하우스 빕스</h3>
+                        <h2>―</h2>
+                        <p>엄선된 쇠고기를 다양하고 차별화 된 조리방식으로 즐길 수 있는<br>
+                           빕스만의 스테이크와 계절별로 신선하고 풍성한 샐러드 바를<br>
+                           품격있고 세련된 분위기에서 즐길 수 있는 곳, 빕스!<br>
+                           소중한 사람들과 함께하는 고객님의 삶에 멋과 여유를 드리는 공간,<br>
+                           스테이크와 샐러드 그 이상의 무엇을 경험하실 수 있는<br>
+                           My No.1 스테이크 하우스, 지금 이 모든 것을 빕스에서 즐기세요.</p>
+                    </div>
+                    <div class="textBtn">
+                        <p><a href="#">빕스 브랜드 스토리</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="nameBo">
+                <div class="BoImg"></div>
+                <div class="BoImgS"></div>
+                <h1>steak house</h1>
+            </div>
+        </section>
+
+        <!-- 협약 -->
+        <section id="with" class="w_box">
+            <div class="withBg">
+                <div class="withImgF"></div>
+                <div class="withImgS"></div>
+                <div class="withImgT"></div>
+                <div class="withImgFo"></div>
+                <div class="withImgFi"></div>
+
+                <div class="withText">
+                    <h3>with VIPS</h3>
+                    <h2>―</h2>
+                    <p>빕스는 외국에 로열티를 지불하지 않는 정통 스테이크 하우스로 1997년 오픈 이래<br>
+                       늘 신선하고 새로운 맛, 활력 넘치는 공간, 세심한 배려와 진심이 담긴 서비스로<bR>
+                       My No.1 스테이크 하우스로 우뚝 선 빕스는 세계에서 인정 받을 수 있도록 노력합니다.</p>
+                </div>
+                <div class="withBox">
+                    <div class="info">
+                        <img src="imges/info.jpg" alt="info">
+                        <div class="infoOp"></div>
+                        <div class="infoText">
+                            <h3>창업안내</h3>
+                            <p>빕스와 함께하는 성공창업<br>
+                               지금 바로 상담 받아보세요</p>
+                        </div>
+                        <div class="infoBtn">
+                            <p><a href="#">바로가기</a></p>
+                        </div>
+                    </div>
+                    <div class="find">
+                        <img src="imges/find.jpg" alt="find">
+                        <div class="findOp"></div>
+                        <div class="findText">
+                            <h3>매장찾기</h3>
+                            <p>가까운 매장을 찾아보세요</p>
+                        </div>
+                        <div class="findSch">
+                            <input type="text" placeholder="&nbsp&nbsp지역을 입력하세요">
+                            <div class="findI">
+                                <img src="imges/search.png" alt="search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 인스타그램 -->
+        <section id="sns" class="w_box">
+            <div class="nameBox">
+                <div class="BoxImg"></div>
+                <div class="BoxImgS"></div>
+                <h1>we are VIPS</h1>
+            </div>
+
+            <div class="snsBox">
+                <ul class="snsF">
+                    <li>
+                        <img src="imges/sns6.jpg" alt="sns">
+                        <div class="snsFpt">
+                            <a href="https://www.instagram.com/"><img src="imges/instagram.png" alt="instagram"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imges/sns2.jpg" alt="sns">
+                        <div class="snsFpt">
+                            <a href="https://www.instagram.com/"><img src="imges/instagram.png" alt="instagram"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imges/sns3.jpg" alt="sns">
+                        <div class="snsFpt">
+                            <a href="https://www.instagram.com/"><img src="imges/instagram.png" alt="instagram"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imges/sns4.jpg" alt="sns">
+                        <div class="snsFpt">
+                            <a href="https://www.instagram.com/"><img src="imges/instagram.png" alt="instagram"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imges/sns8.jpg" alt="sns">
+                        <div class="snsFpt">
+                            <a href="https://www.instagram.com/"><img src="imges/instagram.png" alt="instagram"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 하단 -->
+            <footer id="footer">
+                <div class="cjfood">
+                    <div class="logoS">
+                        <div class="cj">
+                            <img src="imges/cjfoodville.png" alt="cj">
+                        </div>
+                        <div class="tousjours">
+                            <img src="imges/touslesjours.png" alt="touslesjours">
+                        </div>
+                        <div class="place">
+                            <img src="imges/place.png" alt="place">
+                        </div>
+                        <div class="noodle">
+                            <img src="imges/noddle.png" alt="noddle">
+                        </div>
+                        <div class="foodworld">
+                            <img src="imges/foodworld.png" alt="food">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="siteMap">
+                    <h3><a href="#">회사소개</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">사이트맵</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">이용약관</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">위치기반서비스 이용약관</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">개인정보처리방침</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">법적고지</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">윤리신고센터</a></h3>
+                </div>
+
+                <div class="company">
+                    <p>(우)0455 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3.9-11층 CJ푸드빌(주) &nbsp&nbsp | &nbsp&nbsp 대표이사 : 김찬호 &nbsp&nbsp | &nbsp&nbsp 고객센터 : 1577-0700<br>
+                    copyrightⓒ2017 CJ Foodville ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="fontImg">
+                    <p>* 본 사이트는 개인 포트폴리오 목적으로 제작되었으며 상업적 목적이 아닙니다. 사용 된 이미지와 폰트등은 별도의 출처가 있습니다.*</p>
+                </div>
+            </footer>
+        </section>
+
+        <!-- 하단 -->
+        <!-- <footer id="footer" class="w_box">
+            <div class="cjfood">
+                <div class="logoS">
+                    <div class="cj">
+                        <img src="imges/cjfoodville.png" alt="cj">
+                    </div>
+                    <div class="tousjours">
+                        <img src="imges/touslesjours.png" alt="touslesjours">
+                    </div>
+                    <div class="place">
+                        <img src="imges/place.png" alt="place">
+                    </div>
+                    <div class="noodle">
+                        <img src="imges/noddle.png" alt="noddle">
+                    </div>
+                    <div class="foodworld">
+                        <img src="imges/foodworld.png" alt="food">
+                    </div>
+                </div>
+            </div>
+
+            <div class="siteMap">
+                <h3><a href="#">회사소개</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">사이트맵</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">이용약관</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">위치기반서비스 이용약관</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">개인정보처리방침</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">법적고지</a> &nbsp&nbsp | &nbsp&nbsp <a href="#">윤리신고센터</a></h3>
+            </div>
+
+            <div class="company">
+                <p>(우)0455 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3.9-11층 CJ푸드빌(주) &nbsp&nbsp | &nbsp&nbsp 대표이사 : 김찬호 &nbsp&nbsp | &nbsp&nbsp 고객센터 : 1577-0700<br>
+                   copyrightⓒ2017 CJ Foodville ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="fontImg">
+                <p>* 본 사이트는 개인 포트폴리오 목적으로 제작되었으며 상업적 목적이 아닙니다. 사용 된 이미지와 폰트등은 별도의 출처가 있습니다.*</p>
+            </div>
+        </footer> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,415 @@
+* {margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;}
+ 
+ul,li {list-style: none;}
+ 
+a {text-decoration: none;
+    color: #333;
+    cursor: pointer;}
+ 
+#wrap {width: 100%;}
+
+/* 상단 */
+#header {width: 100%; height: 100vh;
+        background-color: bisque;
+        position: relative;}
+
+#viewer {position: absolute;
+         width: 100%; height: 100vh;}
+#viewer > ul > li.img1 {width: 100%; height: 100vh;
+                        position: absolute; left: 0;
+                        z-index: 300;
+                        background: url(../imges/main_one.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;}
+#viewer > ul > li.img2 {width: 100%; height: 100vh;
+                        position: absolute; left: 0;
+                        z-index: 200;
+                        background: url(../imges/main_three.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;}
+#viewer > ul > li.img3 {width: 100%; height: 100vh;
+                        position: absolute; left: 0;
+                        z-index: 100;
+                        background: url(../imges/main_two.jpg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;}
+
+nav {width: 100%; height: 100px;
+     z-index: 9999;
+     position: fixed;}
+
+.logoBox {width: 200px; height: 100px;
+          display: inline-block;
+          margin-left: 50px;}
+
+.mainMenu {width: 720px; height: 100px;
+           position: absolute; top: 0; left: 300px;}
+
+.mainMenu .navi {float: left; width: 720px;
+                 display: flex; justify-content: space-between;
+                 clear: both; text-align: center;}
+
+.mainMenu .navi > li {margin-top: 30px;
+                      font-size: 1.2rem; font-weight: 900;}
+.mainMenu .navi > li > a:hover {color: #c70125;}
+
+.subDep {width: 100%; height: 380px;
+         background-color: white;
+         z-index: -999;
+         border-bottom: 1px solid rgb(153, 153, 153);
+         position: absolute; top: 0;}
+
+.subMenu {width: 750px; height: 280px;
+          text-align: center;
+          display: flex; justify-content: space-between;
+          margin-top: 100px; margin-left: 260px;}
+.subMenu li a {line-height: 50px; font-size: .9rem;}
+.subMenu li a:hover {color: #000; font-weight: 600;}
+
+
+.join {width: 200px; height: 100px;
+       position: absolute; right: 0;
+       display: inline-block;}
+.join li {float: left; margin-left: 20px;
+          margin-top: 30px;
+          font-size: 1.2rem; font-weight: 900;}
+.join li:first-child {margin-left: 0;}
+
+
+/* .btnR {width: 50px; height: 120px; background-color: lightcoral;
+       position: absolute; top: 50%;}
+.btnR button {border: none;
+              background-color: rgba(255, 255, 255, 0);}
+
+.btnL {width: 50px; height: 120px; background-color: lightcoral;
+       position: absolute; top: 50%; right: 0;}
+.btnL button {border: none;
+              background-color: rgba(255, 255, 255, 0);} */
+
+#btnGroup {width: 100px; height: 16px;
+           position: absolute;
+           bottom: 30px; left: 50%;
+           transform: translate(-50%);
+           z-index: 500;
+           display: flex; justify-content: space-between;}
+#btnGroup li {float: left; width: 16px; height: 16px;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.5);
+              cursor: pointer;}
+#btnGroup li:hover {background-color: rgba(255, 255, 255, 1);}
+#btnGroup li.on {background-color: rgba(255, 255, 255, 1);}
+
+/* 스테이크 메뉴 */
+#steakM {width: 100%; height: 100vh;
+         /* background-color: rgb(176, 170, 115); */
+         position: relative;}
+
+.nameB {width: 400px; height: 90px;
+        /* background-color: lightgreen; */
+        position: absolute; left: 50%; top: 25%;
+        transform: translate(-50%, -75%);}
+.nameImg {width: 44px; height: 44px;
+          border-radius: 50%;
+          background-color: #c70125;
+          position: absolute;
+          left: 26px; top: 10px;
+          z-index: -99;}
+.nameImgS {width: 20px; height: 20px;
+          border-radius: 50%;
+          background-color: #c70125;
+          position: absolute;
+          z-index: -99;}
+.nameB h1 {font-size: 3.4rem; text-align: center;}
+
+.menuB {width: 1000px; height: 360px;
+        /* background-color: lightgrey; */
+        position: absolute; left: 50%; top: 55%;
+        display: flex; justify-content: space-between;
+        transform: translate(-50%, -45%);}
+.menuB article {width: 220px; height: 360px;
+                float: left;
+                /* background-color: darkseagreen; */}
+.menuB article .photo {width: 220px; height: 220px;
+                       margin: 0 auto;
+                       cursor: pointer;
+                       overflow: hidden;
+                       background-color: #333;
+                       border-radius: 50%;
+                       box-shadow: 3px 3px 3px #333;}
+.menuB article .photo img {max-width: 100%;
+                           max-height: 100%;
+                            border-radius: 50%;
+                            object-fit: contain;}
+.menuB article .photo:hover img {transform: scale(1.1);
+                                 transition: all 0.4s ease-in-out;}
+.menuB article .sName {width: 220px; height: 58px;
+                       margin-top: 10px;
+                       /* background-color: antiquewhite; */}
+.menuB article .sName h3 {text-align: center; font-size: 1.2rem;
+                          padding-top: 12px;
+                          color: #c70125;}
+.menuB article .sText {width: 220px; height: 70px;
+                       /* background-color: cornsilk; */}
+.menuB article .sText p {text-align: center; line-height: 30px;}
+
+/* 유튜브 */
+#youtube {width: 100%; height: 100vh;
+          position: relative;
+          /* background-color: rgb(133, 63, 63); */}
+.ytBg {width: 100%; height: 100vh;
+       position: absolute;
+       top: 0; left: 0;
+       background-image: url(../imges/youtube.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;}
+.realYt {width: 700px; height: 400px;
+         background-color: aquamarine;
+         position: absolute;
+         top: 70%; left: 43%;
+         transform: translate(-30%, -57%);}
+
+/* 스토리 */
+#brand {width: 100%; height: 100vh;
+       /* background-color: bisque; */
+        position: relative;}
+.nameBo {width: 600px; height: 110px;
+         /* background-color: rgba(0, 0, 0, 0.5); */
+         position: absolute; left: 58%; top: 25%;
+         transform: translate(-42%, -75%);}
+.nameBo h1 {font-size: 5.7rem;
+            float: right;}
+.BoImg {width: 50px; height: 50px;
+        border-radius: 50%;
+        background-color: #c70125;
+        position: absolute;
+        z-index: -999;
+        right: 0px; top: 26px;}
+.BoImgS {width: 16px; height: 16px;
+        border-radius: 50%;
+        background-color: #c70125;
+        position: absolute;
+        z-index: -999;
+        right: -20px; top: 70px;}
+
+.brandBox {width: 1000px; height: 470px;
+           /* background-color: beige; */
+           position: absolute; left: 50%; top: 53%;
+           display: flex; justify-content: space-between;
+           transform: translate(-50%, -47%);}
+.brandImg {width: 440px; height: 470px;
+           background-color: lightcyan;}
+.brandImg img {width: 100%; height: 100%;
+               object-fit: cover;}
+
+.brandText {width: 510px; height: 470x;
+            /* background-color: wheat; */}
+.textBox {width: 510px; height: 310px;
+          /* background-color: honeydew; */}
+.brandText h3 {font-size: 1.6rem; font-weight: 800;
+               text-align: center;
+               margin-top: 60px;}
+.brandText h2 {font-size: 1.5rem; font-weight: 800;
+               text-align: center;
+               margin-top: 20px;}
+.brandText p {font-size: 1rem;
+              text-align: center; margin-top: 20px;
+              line-height: 34px;}
+.textBtn {width: 510px; height: 50px;
+          margin-top: 44px;
+          /* background-color: darkgrey; */}
+.textBtn p a {text-align: center; font-size: 1.2rem;
+              font-weight: 800;}
+.textBtn p a:hover {color: #c70125;}
+
+/* 협약 */
+#with {width: 100%; height: 100vh;
+       /* background-color: darkseagreen; */
+       position: relative;}
+.withBg {width: 100%; height: 370px;
+         background-color: #f9f5ef;
+         position: absolute;
+         left: 0; top: 43%;
+         transform: translate(-0%, -57%);
+         z-index: 99;
+         box-shadow: 6px 3px 6px rgb(216, 216, 216);}
+.withImgF {width: 80px; height: 80px;
+           border-radius: 50%;
+           background-color: #c70125;
+           position: absolute;
+           top: 50px; left: 80px;}
+.withImgS {width: 40px; height: 40px;
+           border-radius: 50%;
+           background-color: #c70125;
+           position: absolute;
+           top: 250px; left: 180px;}
+.withImgT {width: 30px; height: 30px;
+           border-radius: 50%;
+           background-color: #c70125;
+           position: absolute;
+           z-index: -99;
+           top: 50px; left: 840px;}
+.withImgFo {width: 100px; height: 100px;
+            border-radius: 50%;
+            background-color: #c70125;
+            position: absolute;
+            z-index: -99;
+            top: 220px; left: 1100px;}
+.withImgFi {width: 34px; height: 34px;
+            border-radius: 50%;
+            background-color: #c70125;
+            position: absolute;
+            z-index: -99;
+            top: 140px; left: 1260px;}
+
+.withText {width: 880px;
+           margin: 0 auto; margin-top: -16px;}
+.withText h3 {font-size: 2.6rem; font-weight: 800;
+              text-align: center;
+              margin-top: 40px;}
+.withText h2 {font-size: 2rem; font-weight: 800;
+              text-align: center;}
+.withText p {font-size: 1rem; text-align: center;
+             line-height: 30px;}
+
+.withBox {width: 780px; height: 280px;
+          /* background-color: lightblue; */
+          margin: 0 auto;
+          position: relative;
+          margin-top: 30px;}
+.info {width: 370px; height: 280px;
+        display: inline-block;
+        /* background-color: cadetblue; */
+        z-index: -999;
+        position: relative;
+        border-radius: 10px;}
+.info img {position: absolute;
+           border-radius: 10px;
+           width: 100%; height: 100%;
+           object-fit: cover;
+           z-index: -999;}
+.info .infoOp {width: 370px; height: 280px;
+               background-color: rgba(0, 0, 0, 0.5);
+               border-radius: 10px;
+               position: absolute;
+               z-index: -99;}
+.infoText {width: 370px;}
+.infoText h3 {text-align: center; font-size: 1.6rem;
+              color: white; margin-top: 36px;}
+.infoText p {text-align: center; font-size: 1.1rem;
+             line-height: 32px;
+             color: white; margin-top: 40px;}
+.infoBtn {width: 370px; height: 50px;
+          margin-top: 30px; text-align: center;}
+.infoBtn p a {font-size: 1.2rem; color: rgb(255, 255, 255);}
+
+.find {width: 370px; height: 280px;
+        display: inline-block;
+        border-radius: 10px;
+        position: absolute; right: 0;
+        /* background-color: rgb(223, 202, 165); */}
+.find img {position: absolute;
+           border-radius: 10px;
+           width: 100%; height: 100%;
+           object-fit: cover;
+           z-index: -99;}
+.find .findOp {width: 370px; height: 280px;
+               background-color: rgba(0, 0, 0, 0.5);
+               border-radius: 10px;
+               position: absolute;
+               z-index: -9;}
+.findText {width: 370px;}
+.findText h3 {text-align: center; font-size: 1.6rem;
+              color: white; margin-top: 36px;}
+.findText p {text-align: center; font-size: 1.1rem;
+             line-height: 32px;
+             color: white; margin-top: 40px;}
+.findSch {width: 370px; height: 60px;
+          margin-top: 40px; position: relative;}
+.findSch input {width: 260px; height: 40px;
+                border: 1px solid white;
+                border-radius: 2px;
+                background-color: rgba(255, 255, 255, 0.6);
+                margin-left: 55px;}
+.findSch img {width: 30px; height: 28px;
+              z-index: 999;
+              position: absolute;
+              cursor: pointer;
+              top: 5px; left: 74%;}
+
+/* 인스타그램 */
+#sns {width: 100%; height: 100vh;
+      position: relative;
+      /* background-color: lightpink; */}
+.nameBox {width: 400px; height: 90px;
+          /* background-color: rgba(255, 255, 255, 0.5); */
+          position: absolute; left: 50%; top: 25%;
+          transform: translate(-50%, -75%);}
+.nameBox h1 {font-size: 3.4rem; text-align: center;}
+.BoxImg {width: 40px; height: 40px;
+         background-color: #c70125;
+         border-radius: 50%;
+         position: absolute;
+         z-index: -99; left: 250px;}
+.BoxImgS {width: 16px; height: 16px;
+          background-color: #c70125;
+          border-radius: 50%;
+          position: absolute;
+          z-index: -99; left: 280px; top: -20px;}
+
+.snsBox {width: 1180px; height: 210px;
+         /* background-color: gray; */
+         position: absolute;
+         left: 50%; top: 45%;
+         transform: translate(-50%, -55%);}
+.snsF {width: 1180px; height: 210px;
+       /* background-color: aquamarine; */}
+.snsF li {width: 232px; height: 210px;
+          float: left;
+          margin-left: 5px;
+          background-color: #000;
+          cursor: pointer;
+          position: relative;}
+.snsF li:nth-child(1) {margin-left: 0;}
+.snsF > li > img {width: 100%; height: 100%;
+                  object-fit: cover;}
+.snsFpt {width: 56px; height: 56px;
+         position: absolute; top: 50%; left: 50%;
+         transform: translate(-50%, -50%);
+         display: none;}
+.snsF li:hover > img {opacity: 0.5;}
+.snsF li:hover > .snsFpt {display: block;}
+
+/* 하단 */
+#footer {width: 100%; height: 250px;
+         background-color: white;
+         border-top: 1px solid rgb(202, 202, 202);
+         position: absolute;
+         bottom: 0;}
+.cjfood {width: 100%; height: 70px;}
+.logoS {width: 800px; height: 70px;
+        display: flex; justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 70px;}
+.logoS div {width: 130px; height: 70px;
+            margin-left: 70px;
+            display: inline-block;}
+.logoS div:first-child {margin-left: 0;}
+.logoS div img {width: 110px; height: 60px;}
+
+.siteMap {width: 1010px; height: 30px;
+          margin-left: 70px;
+          margin-top: 20px;}
+.siteMap h3 {font-size: 0.8rem;}
+.siteMap h3 a{font-size: 0.8rem;}
+.siteMap h3 a:hover {color: #c70125;}
+.company {width: 1000px; height: 50px;
+          margin-left: 70px;
+          margin-top: 10px;}
+.company p {line-height: 26px; font-size: 0.8rem;}
+.fontImg {width: 1000px; height: 30px;
+          margin-left: 70px;
+          margin-top: 10px;}
+.fontImg p {font-size: 0.7rem;}
